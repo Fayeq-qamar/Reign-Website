@@ -86,7 +86,7 @@ export default function TestimonialsSection() {
 
               {/* Testimonial Text */}
               <p className="text-brand-gray-700 mb-6 leading-relaxed">
-                "{testimonial.text}"
+                &ldquo;{testimonial.text}&rdquo;
               </p>
 
               {/* Highlight Badge */}
