@@ -1,0 +1,36 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle for better visibility -->
+  <circle cx="100" cy="100" r="100" fill="#FFFFFF"/>
+
+  <!-- Crown gradient -->
+  <defs>
+    <linearGradient id="crownGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD617" />
+      <stop offset="50%" stop-color="#FFA500" />
+      <stop offset="100%" stop-color="#FF8C00" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Crown base -->
+  <path
+    d="M40 100 L50 140 L150 140 L160 100 L130 110 L100 70 L70 110 Z"
+    fill="url(#crownGrad)"
+    stroke="#FFD617"
+    stroke-width="3"
+    filter="url(#glow)"
+  />
+
+  <!-- Crown gems -->
+  <circle cx="40" cy="100" r="8" fill="#FFD617"/>
+  <circle cx="70" cy="110" r="8" fill="#FFD617"/>
+  <circle cx="100" cy="70" r="10" fill="#FFD617"/>
+  <circle cx="130" cy="110" r="8" fill="#FFD617"/>
+  <circle cx="160" cy="100" r="8" fill="#FFD617"/>
+</svg>
